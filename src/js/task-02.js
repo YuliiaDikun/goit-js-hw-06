@@ -13,6 +13,4 @@ ingredients.forEach(ingredient => {
   listItem.classList.add("item");
   listItem.innerText = ingredient;
   list.append(listItem);
-}); 
- 
-     
+});      
