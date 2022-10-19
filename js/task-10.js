@@ -30,8 +30,12 @@ function clearDivHTML() {
 }
 
 createBtn.addEventListener('click', () => { 
-  let number = inputEl.value;
-  createBoxes(number);
+  let value = inputEl.value;  
+  if (value === '') {
+    alert('Please enter a number!')
+  } else { 
+    createBoxes(value);
+  }  
 });
 
 destroyBtn.addEventListener('click', clearDivHTML);
