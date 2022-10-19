@@ -26,10 +26,11 @@ function createBoxes(amount) {
 
 function clearDivHTML() { 
   divBox.innerHTML = '';
+  inputEl.value = '';
 }
 
 createBtn.addEventListener('click', () => { 
-  let number = inputEl.value
+  let number = inputEl.value;
   createBoxes(number);
 });
 
