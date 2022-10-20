@@ -8,7 +8,7 @@ function formValidation(e) {
     elements: { email, password }
   } = e.currentTarget;
 
-  if (email.value === "" || password.value === "") {
+  if (!email.value || !password.value) {
     alert("Please fill in all the fields!");
     return;
   }
