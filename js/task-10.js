@@ -7,7 +7,8 @@ const createBtn = document.querySelector('[data-create]');
 const destroyBtn = document.querySelector('[data-destroy]');
 const divBox = document.querySelector('#boxes');
 
-function createBoxes(amount) {    
+function createBoxes(amount) { 
+  const divColection = [];
   for (let i = 1; i <= amount; i++) {
     let color = getRandomHexColor();
     let width = `${10 * i}px`;
@@ -20,8 +21,9 @@ function createBoxes(amount) {
     
     div.style.backgroundColor = color;
     
-    divBox.append(div);
-  }    
+    divColection.push(div);
+  } 
+  divBox.append(...divColection);
 }
 
 function clearDivHTML() { 
