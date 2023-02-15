@@ -28,11 +28,11 @@ function createBoxes(amount:number):void {
 
 function clearDivHTML():void { 
   divBox.innerHTML = '';
-  inputEl.value = '';
+  inputEl10.value = '';
 }
 
 createBtn.addEventListener('click', ():void => { 
-  let value:string = inputEl.value;  
+  let value:string = inputEl10.value;  
   if (value === '') {
     alert('Please enter a number!')
   } else { 

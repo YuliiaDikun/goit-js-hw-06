@@ -22,10 +22,10 @@ function createBoxes(amount) {
 }
 function clearDivHTML() {
     divBox.innerHTML = '';
-    inputEl.value = '';
+    inputEl10.value = '';
 }
 createBtn.addEventListener('click', () => {
-    let value = inputEl.value;
+    let value = inputEl10.value;
     if (value === '') {
         alert('Please enter a number!');
     }
