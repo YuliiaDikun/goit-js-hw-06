@@ -1,2 +1,2 @@
 # goit-js-hw-06
-#DOM Practice
+#DOM Practice with TypeScript
